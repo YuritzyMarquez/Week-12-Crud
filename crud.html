@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+</head>
+
+<link rel="stylesheet" href="crud.css">
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">Champion</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="product">Type</label>
+                        <input type="text" name="type" id="type">
+                    </div>
+                    <div>
+                        <label for="qty">Role</label>
+                        <input type="text" name="role" id="role">
+                    </div>
+                    <div>
+                        <label for="perPrice">Runes</label>
+                        <input type="text" name="runes" id="runes">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table id="championRoster">
+                        <thead>
+                            <tr>
+                                <th >Champion</th>
+                                <th >Type</th>
+                                <th >Role</th>
+                                <th >Runes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+
+   
+    <script src="crud.js"></script>
+
+
+</body>
+</html>
